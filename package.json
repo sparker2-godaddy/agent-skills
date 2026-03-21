@@ -1,0 +1,26 @@
+{
+  "name": "@sparker2/agent-skills",
+  "version": "0.1.0",
+  "description": "Reusable AI agent skills for software development workflows",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.gdcorp.tools/sparker2/agent-skills"
+  },
+  "files": [
+    "skills/",
+    "scripts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "validate": "bash -c 'grep -ri \"internal-url\" skills/ && exit 1 || echo \"✓ No org-specific references in skills/\"'",
+    "postinstall": "node scripts/install-skills.js"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "publishConfig": {
+    "registry": "https://gdartifactory1.jfrog.io/artifactory/api/npm/node-virt/"
+  }
+}

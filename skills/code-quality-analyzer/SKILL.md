@@ -70,9 +70,8 @@ Follow the Guidelines Resolution Protocol:
 
 ### Step 2: Load Quality Standards
 
-- Read `{GUIDELINES_ROOT}/architectural_guidelines.md` (if exists)
 - Read `{GUIDELINES_ROOT}/code_quality_standards.md` (if exists)
-- Load project-specific standards from discovered locations
+- Load any project-specific quality standards from discovered locations
 
 ### Step 3: Analyze Code
 

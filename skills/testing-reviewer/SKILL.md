@@ -82,7 +82,7 @@ Follow the Guidelines Resolution Protocol:
 - Read module files in `{GUIDELINES_ROOT}/modules/testing_core_principles/` (if exists)
 - Load coverage thresholds and pattern requirements
 
-### Step 3: Run Coverage Analysis (MANDATORY)
+### Step 3: Run Coverage Analysis
 
 - Detect project language/framework
 - Execute appropriate coverage commands:
@@ -91,6 +91,7 @@ Follow the Guidelines Resolution Protocol:
   - **Python**: `pytest --cov`
   - **Java**: `mvn test jacoco:report`
 - Parse output and calculate per-package percentages
+- **If coverage tools can't run** (not installed, unsupported language, environment issues): note the failure explicitly in the output and fall back to static analysis — check which source files have corresponding test files and flag gaps
 
 ### Step 4: Validate Test Patterns
 
